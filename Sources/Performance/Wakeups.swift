@@ -2,13 +2,13 @@
 //  Wakeup.swift
 //  Performance
 //
-//  Created by CodingIran on 2023/8/30.
+//  Created by iran.qiu on 2023/8/30.
 //
 
 import Foundation
 import PerformanceC
 
-public enum Wakeup {
+public enum Wakeups {
     public static var interruptWakeups: Int? {
         var interruptWakeup = 0
         guard GetSystemWakeup(&interruptWakeup, nil) else {

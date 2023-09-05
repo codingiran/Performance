@@ -12,8 +12,8 @@ import Foundation
 #error("Performance doesn't support Swift versions below 5.5.")
 #endif
 
-/// Current Performance version 2.0.0. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
-let version = "2.0.0"
+/// Current Performance version 2.0.1. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
+let version = "2.0.1"
 
 open class Performance {
 #if os(iOS) || os(tvOS)
@@ -37,8 +37,8 @@ public extension Performance {
 // MARK: - Wakeups
 
 public extension Performance {
-    var interruptWakeups: Int? { Wakeup.interruptWakeups }
-    var timerWakeups: Int? { Wakeup.timerWakeups }
+    var interruptWakeups: Int? { Wakeups.interruptWakeups }
+    var timerWakeups: Int? { Wakeups.timerWakeups }
 }
 
 #if os(iOS) || os(tvOS)
