@@ -24,5 +24,6 @@ let package = Package(
         .target(
             name: "Performance"
         ),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

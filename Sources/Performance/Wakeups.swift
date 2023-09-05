@@ -6,10 +6,9 @@
 //
 
 import Foundation
-//import PerformanceC
 
-public enum Wakeups {
-    public static var interruptWakeups: UInt64? {
+enum Wakeups {
+    static var interruptWakeups: UInt64? {
         let TASK_POWER_INFO_COUNT = mach_msg_type_number_t(MemoryLayout<task_power_info_data_t>.size / MemoryLayout<integer_t>.size)
         var info = task_power_info_data_t()
         var count = TASK_POWER_INFO_COUNT

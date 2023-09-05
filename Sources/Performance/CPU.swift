@@ -7,9 +7,9 @@
 
 import Foundation
 
-public enum CPU {
+enum CPU {
     /// 获取设备 CPU 的占用率
-    public static var cpuUsage: Double? {
+    static var cpuUsage: Double? {
         var totalUsageOfCPU: Double?
         var threadsList: thread_act_array_t?
         var threadsCount: mach_msg_type_number_t = 0

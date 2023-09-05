@@ -7,9 +7,9 @@
 
 import Foundation
 
-public enum Memory {
+enum Memory {
     /// 获取设备已使用的内存
-    public static var memoryUsage: Double? {
+    static var memoryUsage: Double? {
         guard let memory = memoryFootprint() else { return nil }
         let memoryInMB = Double(memory) / (1024 * 1024)
         return round(memoryInMB * 10) / 10
