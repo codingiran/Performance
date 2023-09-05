@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import MachO
 
 // Enforce minimum Swift version for all platforms and build systems.
 #if swift(<5.5)
