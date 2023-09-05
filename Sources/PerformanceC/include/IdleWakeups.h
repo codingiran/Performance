@@ -9,7 +9,7 @@
 #include <mach/task.h>
 #include <mach/mach.h>
 
-BOOL GetSystemWakeup(NSInteger * _Nullable interrupt_wakeup, NSInteger * _Nullable timer_wakeup) {
+BOOL FetchSystemWakeup(NSInteger * _Nullable interrupt_wakeup, NSInteger * _Nullable timer_wakeup) {
     struct task_power_info info = {0};
     mach_msg_type_number_t count = TASK_POWER_INFO_COUNT;
     kern_return_t ret = task_info(current_task(), TASK_POWER_INFO, (task_info_t)&info, &count);

@@ -11,7 +11,7 @@ import PerformanceC
 public enum Wakeups {
     public static var interruptWakeups: Int? {
         var interruptWakeup = 0
-        guard GetSystemWakeup(&interruptWakeup, nil) else {
+        guard FetchSystemWakeup(&interruptWakeup, nil) else {
             return nil
         }
         return interruptWakeup
@@ -19,7 +19,7 @@ public enum Wakeups {
 
     public static var timerWakeups: Int? {
         var timerWakeup = 0
-        guard GetSystemWakeup(nil, &timerWakeup) else {
+        guard FetchSystemWakeup(nil, &timerWakeup) else {
             return nil
         }
         return timerWakeup

@@ -12,8 +12,8 @@ import Foundation
 #error("Performance doesn't support Swift versions below 5.5.")
 #endif
 
-/// Current Performance version 2.0.2. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
-let version = "2.0.2"
+/// Current Performance version 2.0.3. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
+let version = "2.0.3"
 
 open class Performance {
 //#if os(iOS) || os(tvOS)
