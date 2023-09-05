@@ -6,22 +6,22 @@
 //
 
 import Foundation
-import PerformanceC
+//import PerformanceC
 
-public enum Wakeups {
-    public static var interruptWakeups: Int? {
-        var interruptWakeup = 0
-        guard FetchSystemWakeup(&interruptWakeup, nil) else {
-            return nil
-        }
-        return interruptWakeup
-    }
-
-    public static var timerWakeups: Int? {
-        var timerWakeup = 0
-        guard FetchSystemWakeup(nil, &timerWakeup) else {
-            return nil
-        }
-        return timerWakeup
-    }
-}
+//public enum Wakeups {
+//    public static var interruptWakeups: Int? {
+//        var interruptWakeup = 0
+//        guard FetchSystemWakeup(&interruptWakeup, nil) else {
+//            return nil
+//        }
+//        return interruptWakeup
+//    }
+//
+//    public static var timerWakeups: Int? {
+//        var timerWakeup = 0
+//        guard FetchSystemWakeup(nil, &timerWakeup) else {
+//            return nil
+//        }
+//        return timerWakeup
+//    }
+//}
