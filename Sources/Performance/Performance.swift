@@ -12,8 +12,8 @@ import Foundation
 #error("Performance doesn't support Swift versions below 5.5.")
 #endif
 
-/// Current Performance version 1.1.1. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
-let version = "1.1.1"
+/// Current Performance version 1.1.2. Necessary since SPM doesn't use dynamic libraries. Plus this will be more accurate.
+let version = "1.1.2"
 
 public struct Performance {
     public init() {}
