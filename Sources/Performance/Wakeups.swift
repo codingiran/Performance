@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Wakeups {
+enum Wakeups: Sendable {
     static var interruptWakeups: UInt64? {
         let TASK_POWER_INFO_COUNT = mach_msg_type_number_t(MemoryLayout<task_power_info_data_t>.size / MemoryLayout<integer_t>.size)
         var info = task_power_info_data_t()

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum System {
+public enum System: Sendable {
     /// System uptime include sleep time
     public static func uptime() -> time_t {
         var boottime = timeval()

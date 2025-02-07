@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Memory {
+enum Memory: Sendable {
     /// 获取设备已使用的内存
     static var memoryUsage: Double? {
         guard let memory = memoryFootprint() else { return nil }

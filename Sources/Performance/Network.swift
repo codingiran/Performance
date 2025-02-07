@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Network {
+public enum Network: Sendable {
     public static func usage() -> Network.Usage? {
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
         guard getifaddrs(&ifaddr) == 0 else { return nil }
@@ -90,7 +90,7 @@ public enum Network {
 }
 
 public extension Network {
-    struct Usage {
+    struct Usage: Sendable {
         public let wifiDataSent: UInt64
         public let wifiDataReceived: UInt64
         public let wwanDataSent: UInt64

@@ -11,7 +11,7 @@ import Foundation
 
 import QuartzCore
 
-open class FPS {
+open class FPS: @unchecked Sendable {
     private var displayLink: CADisplayLink?
     private var lastTime: TimeInterval = 0
     private var count: UInt = 0
